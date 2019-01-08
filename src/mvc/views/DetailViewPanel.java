@@ -7,10 +7,7 @@ package mvc.views;
 import java.awt.Point;
 import javax.swing.JComponent;
 
-/**
- *
- * @author Bharathy KGiSL
- */
+
 public class DetailViewPanel extends javax.swing.JPanel {
 
     /**
@@ -33,12 +30,24 @@ public class DetailViewPanel extends javax.swing.JPanel {
         return txt_mobileno;
         
     }
-      public javax.swing.JTextField geteMailField()
+     public javax.swing.JTextField geteMailField()
     {
         
         return txt_email;
         
     }
+       /**
+     *
+     * @return
+     */
+    public javax.swing.JTextField getAddressField()
+    {
+        
+        return txt_address;
+        
+    }
+     
+    
       public void setName(String name)
       {
           txt_name.setText(name);
@@ -47,7 +56,12 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_mobileno.setText(mobile);
       }
-        public void seteMail(String email)
+       
+        public void setAddress(String address)
+      {
+          txt_address.setText(address);
+      }
+         public void seteMail(String email)
       {
           txt_email.setText(email);
       }
@@ -72,7 +86,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_mobileno = new javax.swing.JTextField();
         txt_email = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txt_address = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 102, 102));
         setForeground(new java.awt.Color(255, 255, 255));
@@ -95,6 +109,8 @@ public class DetailViewPanel extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Address");
 
+        txt_address.setName("txt_address"); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -111,8 +127,8 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(txt_name)
                     .addComponent(txt_mobileno)
                     .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                    .addComponent(jTextField1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txt_address))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,8 +148,8 @@ public class DetailViewPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                    .addComponent(txt_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         jLabel4.getAccessibleContext().setAccessibleName("Address");
@@ -143,7 +159,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txt_address;
     private javax.swing.JTextField txt_email;
     private javax.swing.JTextField txt_mobileno;
     private javax.swing.JTextField txt_name;

@@ -37,9 +37,9 @@
                   <Component id="txt_name" max="32767" attributes="0"/>
                   <Component id="txt_mobileno" max="32767" attributes="0"/>
                   <Component id="txt_email" pref="131" max="32767" attributes="0"/>
-                  <Component id="jTextField1" max="32767" attributes="0"/>
+                  <Component id="txt_address" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="67" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -64,9 +64,9 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_address" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace pref="63" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -122,7 +122,10 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Address"/>
       </AccessibilityProperties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txt_address">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="txt_address" noResource="true"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
